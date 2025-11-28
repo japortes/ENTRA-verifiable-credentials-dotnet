@@ -157,7 +157,7 @@ namespace OnboardWithTAP.Controllers
             string domain = username.Split( "@" )[1];
             Microsoft.Graph.User user = new Microsoft.Graph.User {
                 Id = id,
-                AccountEnabled = true,
+                AccountEnabled = false,
                 DisplayName = displayName,
                 GivenName = givenName,
                 Surname = surname,
